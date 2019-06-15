@@ -20,20 +20,23 @@ val brick_slab = <minecraft:stone_slab:4>;
 val stone_brick_slab = <minecraft:stone_slab:5>;
 val nether_brick_slab = <minecraft:stone_slab:6>;
 val quartz_slab = <minecraft:stone_slab:7>;
-// val red_sandstone_slab = <minecraft:stone_slab2:0>; //1.8
+val red_sandstone_slab = <minecraft:stone_slab2:0>; //1.8
+val prismarine = <minecraft:prismarine:0>;//1.8
+val prismarine_bricks = <minecraft:prismarine:1>;//1.8
+val dark_prismarine = <minecraft:prismarine:2>;//1.8
 val stone_brick = <minecraft:stonebrick:0>;
 val mossy_stone_brick = <minecraft:stonebrick:1>;
 val cracked_stone_brick = <minecraft:stonebrick:2>;
 val chiseled_stone_brick = <minecraft:stonebrick:3>;
 val stone = <minecraft:stone:0>;
-// val granite = <minecraft:stone:1>; //1.8
-// val polished_granite = <minecraft:stone:2>; //1.8
-// val diorite = <minecraft:stone:3>; //1.8
-// val polished_diorite = <minecraft:stone:4>; //1.8
-// val andesite = <minecraft:stone:5>; //1.8
-// val polished_andesite = <minecraft:stone:6>; //1.8
+val granite = <minecraft:stone:1>; //1.8
+val polished_granite = <minecraft:stone:2>; //1.8
+val diorite = <minecraft:stone:3>; //1.8
+val polished_diorite = <minecraft:stone:4>; //1.8
+val andesite = <minecraft:stone:5>; //1.8
+val polished_andesite = <minecraft:stone:6>; //1.8
 val sand = <minecraft:sand:0>;
-// val red_sand = <minecraft:sand:1>; //1.8
+val red_sand = <minecraft:sand:1>; //1.8
 val cobblestone_wall = <minecraft:cobblestone_wall:0>;
 val mossy_cobblestone_wall = <minecraft:cobblestone_wall:1>;
 val oak_planks = <minecraft:planks:0>;
@@ -137,16 +140,16 @@ furnace.addRecipe(cracked_stone_brick, stone_brick); //1.7
 recipes.addShapeless(stone * 1, [<minecraft:stone_button>]);
 recipes.addShapeless(stone * 2, [<minecraft:stone_pressure_plate>]);
 recipes.addShaped(stone * 1, [[stone_slab], [stone_slab]]);
-// recipes.addShapeless(granite * 1, [polished_granite]); //1.8
-// recipes.addShapeless(diorite * 1, [polished_diorite]); //1.8
-// recipes.addShapeless(andesite * 1, [polished_andesite]); //1.8
+recipes.addShapeless(granite * 1, [polished_granite]); //1.8
+recipes.addShapeless(diorite * 1, [polished_diorite]); //1.8
+recipes.addShapeless(andesite * 1, [polished_andesite]); //1.8
 
 //SANDSTONE
 recipes.addShapeless(sand * 4, [<minecraft:sandstone>]);
 recipes.addShapeless(<minecraft:sandstone> * 3, [<minecraft:sandstone_stairs>, <minecraft:sandstone_stairs>]);
 // recipes.addShaped(<minecraft:sandstone:1> * 1, [sandstone_slab, sandstone_slab]); //sandstone slab handled by vanilla mc
-// recipes.addShapeless(red_sand * 4, [<minecraft:red_sandstone>]); //1.8
-// recipes.addShapeless(<minecraft:red_sandstone> * 3, [<minecraft:red_sandstone_stairs>, <minecraft:red_sandstone_stairs>]); //1.8
+recipes.addShapeless(red_sand * 4, [<minecraft:red_sandstone>]); //1.8
+recipes.addShapeless(<minecraft:red_sandstone> * 3, [<minecraft:red_sandstone_stairs>, <minecraft:red_sandstone_stairs>]); //1.8
 // recipes.addShaped(<minecraft:red_sandstone:1> * 1, [red_sandstone_slab, red_sandstone_slab]); //red sandstone slab handled by vanilla mc
 
 //NETHER
@@ -162,8 +165,9 @@ recipes.addShapeless(<minecraft:quartz> * 4, [<minecraft:quartz_block>]);
 recipes.addShapeless(<minecraft:quartz_block> * 3, [<minecraft:quartz_stairs>, <minecraft:quartz_stairs>]);
 
 //PRISMARINE
-// recipes.addShapeless(<minecraft:prismarine_shard> * 4, [<minecraft:prismarine>]); //1.8
-// recipes.addShapeless(<minecraft:prismarine_shard> * 9, [<minecraft:prismarine_bricks>]); //1.8
+recipes.addShapeless(<minecraft:prismarine_shard> * 4, [prismarine]); //1.8
+recipes.addShapeless(<minecraft:prismarine_shard> * 9, [prismarine_bricks]); //1.8
+recipes.addShapeless(<minecraft:prismarine_shard> * 8, [dark_prismarine]); //1 ink loss, 1.8
 
 //MOSSY
 recipes.addShapeless(<minecraft:mossy_cobblestone> * 1, [mossy_cobblestone_wall]);
@@ -199,8 +203,9 @@ recipes.addShapeless(<minecraft:iron_bars> * 7, [<minecraft:chainmail_leggings:0
 recipes.addShapeless(<minecraft:iron_bars> * 4, [<minecraft:chainmail_boots:0>]);
 
 //IRON
-recipes.addShapeless(<minecraft:iron_ingot> * 6, [<minecraft:iron_door>]);
-// recipes.addShapeless(<minecraft:iron_ingot> * 4, [<minecraft:iron_trapdoor>]); //1.8
+// recipes.addShapeless(<minecraft:iron_ingot> * 6, [<minecraft:iron_door>]); //1.7
+recipes.addShapeless(<minecraft:iron_ingot> * 2, [<minecraft:iron_door>]); //1.8
+recipes.addShapeless(<minecraft:iron_ingot> * 4, [<minecraft:iron_trapdoor>]); //1.8
 recipes.addShapeless(<minecraft:iron_ingot> * 3, [<minecraft:bucket>]);
 recipes.addShapeless(<minecraft:iron_ingot> * 2, [<minecraft:shears:0>]);
 recipes.addShapeless(<minecraft:iron_ingot> * 2, [<minecraft:heavy_weighted_pressure_plate>]);
@@ -259,29 +264,29 @@ recipes.addShapeless(<minecraft:cobblestone> * 3, [<minecraft:stone_axe:0>]); //
 
 //WOOD
 // recipes.addShapeless(oak_planks * 6, [<minecraft:wooden_door>]); //1.7
-// recipes.addShapeless(oak_planks * 2, [<minecraft:wooden_door>]); //1.8
-// recipes.addShapeless(spruce_planks * 2, [<minecraft:spruce_door>]); //1.8
-// recipes.addShapeless(birch_planks * 2, [<minecraft:birch_door>]); //1.8
-// recipes.addShapeless(jungle_planks * 2, [<minecraft:jungle_door>]); //1.8
-// recipes.addShapeless(acacia_planks * 2, [<minecraft:acacia_door>]); //1.8
-// recipes.addShapeless(dark_oak_planks * 2, [<minecraft:dark_oak_door>]); //1.8
+recipes.addShapeless(oak_planks * 2, [<minecraft:wooden_door>]); //1.8
+recipes.addShapeless(spruce_planks * 2, [<minecraft:spruce_door>]); //1.8
+recipes.addShapeless(birch_planks * 2, [<minecraft:birch_door>]); //1.8
+recipes.addShapeless(jungle_planks * 2, [<minecraft:jungle_door>]); //1.8
+recipes.addShapeless(acacia_planks * 2, [<minecraft:acacia_door>]); //1.8
+recipes.addShapeless(dark_oak_planks * 2, [<minecraft:dark_oak_door>]); //1.8
 recipes.addShapeless(oak_planks * 4, [<minecraft:crafting_table>]);
 recipes.addShapeless(oak_planks * 8, [<minecraft:chest>]);
 recipes.addShapeless(oak_planks * 2, [<minecraft:wooden_pressure_plate>]);
 recipes.addShapeless(oak_planks * 2, [<minecraft:sign>]); //0.3 stick loss
 // recipes.addShapeless(<minecraft:stick> * 3, [<minecraft:fence>]); //1.7
-// recipes.addShapeless(oak_planks * 5, [<minecraft:fence>, <minecraft:fence>, <minecraft:fence>]); //1.8
-// recipes.addShapeless(spruce_planks * 5, [<minecraft:spruce_fence>, <minecraft:spruce_fence>, <minecraft:spruce_fence>]); //1.8
-// recipes.addShapeless(birch_planks * 5, [<minecraft:birch_fence>, <minecraft:birch_fence>, <minecraft:birch_fence>]); //1.8
-// recipes.addShapeless(jungle_planks * 5, [<minecraft:jungle_fence>, <minecraft:jungle_fence>, <minecraft:jungle_fence>]); //1.8
-// recipes.addShapeless(acacia_planks * 5, [<minecraft:acacia_fence>, <minecraft:acacia_fence>, <minecraft:acacia_fence>]); //1.8
-// recipes.addShapeless(dark_oak_planks * 5, [<minecraft:dark_oak_fence>, <minecraft:dark_oak_fence>, <minecraft:dark_oak_fence>]); //1.8
+recipes.addShapeless(oak_planks * 5, [<minecraft:fence>, <minecraft:fence>, <minecraft:fence>]); //1.8
+recipes.addShapeless(spruce_planks * 5, [<minecraft:spruce_fence>, <minecraft:spruce_fence>, <minecraft:spruce_fence>]); //1.8
+recipes.addShapeless(birch_planks * 5, [<minecraft:birch_fence>, <minecraft:birch_fence>, <minecraft:birch_fence>]); //1.8
+recipes.addShapeless(jungle_planks * 5, [<minecraft:jungle_fence>, <minecraft:jungle_fence>, <minecraft:jungle_fence>]); //1.8
+recipes.addShapeless(acacia_planks * 5, [<minecraft:acacia_fence>, <minecraft:acacia_fence>, <minecraft:acacia_fence>]); //1.8
+recipes.addShapeless(dark_oak_planks * 5, [<minecraft:dark_oak_fence>, <minecraft:dark_oak_fence>, <minecraft:dark_oak_fence>]); //1.8
 recipes.addShapeless(oak_planks * 4, [<minecraft:fence_gate>]);
-// recipes.addShapeless(spruce_planks * 4, [<minecraft:spruce_fence_gate>]); //1.8
-// recipes.addShapeless(birch_planks * 4, [<minecraft:birch_fence_gate>]); //1.8
-// recipes.addShapeless(jungle_planks * 4, [<minecraft:jungle_fence_gate>]); //1.8
-// recipes.addShapeless(acacia_planks * 4, [<minecraft:acacia_fence_gate>]); //1.8
-// recipes.addShapeless(dark_oak_planks * 4, [<minecraft:dark_oak_fence_gate>]); //1.8
+recipes.addShapeless(spruce_planks * 4, [<minecraft:spruce_fence_gate>]); //1.8
+recipes.addShapeless(birch_planks * 4, [<minecraft:birch_fence_gate>]); //1.8
+recipes.addShapeless(jungle_planks * 4, [<minecraft:jungle_fence_gate>]); //1.8
+recipes.addShapeless(acacia_planks * 4, [<minecraft:acacia_fence_gate>]); //1.8
+recipes.addShapeless(dark_oak_planks * 4, [<minecraft:dark_oak_fence_gate>]); //1.8
 recipes.addShapeless(<minecraft:stick> * 2, [<minecraft:ladder>]); //0.3 stick loss
 recipes.addShapeless(oak_planks * 3, [<minecraft:trapdoor>]);
 // recipes.addShaped(oak_planks * 1, [stone_wood_slab, stone_wood_slab]); //stone wood slab no longer in use
@@ -326,6 +331,7 @@ recipes.addShaped(brown_wool * 2, [[brown_carpet], [brown_carpet], [brown_carpet
 recipes.addShaped(green_wool * 2, [[green_carpet], [green_carpet], [green_carpet]]);
 recipes.addShaped(red_wool * 2, [[red_carpet], [red_carpet], [red_carpet]]);
 recipes.addShaped(black_wool * 2, [[black_carpet], [black_carpet], [black_carpet]]);
+//banners could be accidentally lost. maybe would be ok if it has no pattern? 6wool=<minecraft:banner>
 
 //GLASS
 recipes.addShapeless(<minecraft:glass> * 1, [<minecraft:glass_bottle>]);
@@ -346,5 +352,4 @@ recipes.addShapeless(brown_glass * 3, [brown_pane, brown_pane, brown_pane, brown
 recipes.addShapeless(green_glass * 3, [green_pane, green_pane, green_pane, green_pane, green_pane, green_pane, green_pane, green_pane]);
 recipes.addShapeless(red_glass * 3, [red_pane, red_pane, red_pane, red_pane, red_pane, red_pane, red_pane, red_pane]);
 recipes.addShapeless(black_glass * 3, [black_pane, black_pane, black_pane, black_pane, black_pane, black_pane, black_pane, black_pane]);
-
 
