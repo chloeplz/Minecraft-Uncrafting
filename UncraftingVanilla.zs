@@ -136,6 +136,10 @@ recipes.addShapeless(stone_brick * 3, [<minecraft:stone_brick_stairs>, <minecraf
 recipes.addShaped(chiseled_stone_brick * 1, [[stone_brick_slab], [stone_brick_slab]]); //1.7
 furnace.addRecipe(cracked_stone_brick, stone_brick); //1.7
 
+//ENDSTONE
+recipes.addShapeless(<minecraft:end_stone> * 1, [<minecraft:end_bricks>]);  //1.9
+// recipes.addShapeless(stone_brick * 3, [<minecraft:end_stone_brick_stairs>, <minecraft:end_stone_brick_stairs>]); //1.14
+
 //STONE
 recipes.addShapeless(stone * 1, [<minecraft:stone_button>]);
 recipes.addShapeless(stone * 2, [<minecraft:stone_pressure_plate>]);
@@ -163,6 +167,14 @@ recipes.addShapeless(<minecraft:glowstone_dust> * 4, [<minecraft:glowstone>]);
 recipes.addShapeless(<minecraft:quartz> * 4, [<minecraft:quartz_block>]);
 // recipes.addShaped(<minecraft:quartz_block:1> * 1, [[quartz_slab], [quartz_slab]]); //quartz slab handled by vanilla mc
 recipes.addShapeless(<minecraft:quartz_block> * 3, [<minecraft:quartz_stairs>, <minecraft:quartz_stairs>]);
+
+//PURPUR
+recipes.addShapeless(<minecraft:chorus_fruit_popped> * 4, [<minecraft:purpur_block>]); //1.9
+// recipes.addShaped(<minecraft:purpur_pillar> * 1, [[<minecraft:purpur_slab>], [<minecraft:purpur_slab>]]); //purpur slab handled by vanilla mc
+recipes.addShapeless(<minecraft:purpur_block> * 3, [<minecraft:purpur_stairs>, <minecraft:purpur_stairs>]); //1.9
+recipes.addShapeless(<minecraft:purpur_slab> * 6, [<minecraft:purpur_pillar>]); //1.9, remove for 1.13
+recipes.addShaped(<minecraft:purpur_stairs> * 3, [[<minecraft:purpur_pillar>, null, null], [<minecraft:purpur_pillar>, <minecraft:purpur_pillar>, null], [<minecraft:purpur_pillar>, <minecraft:purpur_pillar>, <minecraft:purpur_pillar>]]); //1.9, remove for 1.13
+recipes.addShaped(<minecraft:purpur_stairs> * 3, [[null, null, <minecraft:purpur_pillar>], [null, <minecraft:purpur_pillar>, <minecraft:purpur_pillar>], [<minecraft:purpur_pillar>, <minecraft:purpur_pillar>, <minecraft:purpur_pillar>]]); //1.9, remove for 1.13
 
 //PRISMARINE
 recipes.addShapeless(<minecraft:prismarine_shard> * 4, [prismarine]); //1.8
@@ -305,6 +317,11 @@ recipes.addShapeless(dark_oak_planks * 3, [<minecraft:dark_oak_stairs>, <minecra
 recipes.addShapeless(oak_planks * 1, [<minecraft:wooden_button>]);
 // recipes.addShapeless(oak_planks * 1, [<minecraft:stick>, <minecraft:stick>]); //unrealistic recipe
 recipes.addShapeless(oak_planks * 5, [<minecraft:boat>]);
+recipes.addShapeless(spruce_planks * 5, [<minecraft:spruce_boat>]); //1.9
+recipes.addShapeless(birch_planks * 5, [<minecraft:birch_boat>]); //1.9
+recipes.addShapeless(jungle_planks * 5, [<minecraft:jungle_boat>]); //1.9
+recipes.addShapeless(acacia_planks * 5, [<minecraft:acacia_boat>]); //1.9
+recipes.addShapeless(dark_oak_planks * 5, [<minecraft:dark_oak_boat>]); //1.9
 recipes.addShapeless(oak_planks * 3, [<minecraft:bowl>, <minecraft:bowl>, <minecraft:bowl>, <minecraft:bowl>]);
 // recipes.addShapeless(oak_planks * 8, [<minecraft:noteblock>]); //1 redstone loss
 recipes.addShapeless(oak_planks * 2, [<minecraft:wooden_sword:0>]); //1 stick loss
