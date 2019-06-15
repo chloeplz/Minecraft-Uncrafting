@@ -1,6 +1,6 @@
 ### Uncrafting Recipes for 1.7
 
-written in ZenScript for [CraftTweaker](https://minecraft.curseforge.com/projects/crafttweaker)
+written in ZenScript for [MineTweaker3](https://minecraft.curseforge.com/projects/minetweaker3)
 
 includes uncrafting for a few mods as well:
 - Ex Nihilo
