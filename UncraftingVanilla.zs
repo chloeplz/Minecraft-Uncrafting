@@ -17,17 +17,17 @@ val sandstone_slab = <minecraft:stone_slab:1>;
 // val stone_wood_slab = <minecraft:stone_slab:2>; //stone wood slab no longer in use
 val cobblestone_slab = <minecraft:stone_slab:3>;
 val brick_slab = <minecraft:stone_slab:4>;
-val stone_brick_slab = <minecraft:stone_slab:5>;
+// val stone_brick_slab = <minecraft:stone_slab:5>; //handled by vanilla 1.8+
 val nether_brick_slab = <minecraft:stone_slab:6>;
 val quartz_slab = <minecraft:stone_slab:7>;
 val red_sandstone_slab = <minecraft:stone_slab2:0>; //1.8
-val prismarine = <minecraft:prismarine:0>;//1.8
-val prismarine_bricks = <minecraft:prismarine:1>;//1.8
-val dark_prismarine = <minecraft:prismarine:2>;//1.8
+val prismarine = <minecraft:prismarine:0>; //1.8
+val prismarine_bricks = <minecraft:prismarine:1>; //1.8
+val dark_prismarine = <minecraft:prismarine:2>; //1.8
 val stone_brick = <minecraft:stonebrick:0>;
 val mossy_stone_brick = <minecraft:stonebrick:1>;
-val cracked_stone_brick = <minecraft:stonebrick:2>;
-val chiseled_stone_brick = <minecraft:stonebrick:3>;
+// val cracked_stone_brick = <minecraft:stonebrick:2>; //handled by vanilla 1.8+
+// val chiseled_stone_brick = <minecraft:stonebrick:3>; //handled by vanilla 1.8+
 val stone = <minecraft:stone:0>;
 val granite = <minecraft:stone:1>; //1.8
 val polished_granite = <minecraft:stone:2>; //1.8
@@ -133,8 +133,8 @@ recipes.addShapeless(<minecraft:brick> * 3, [<minecraft:flower_pot>]);
 //STONEBRICK
 recipes.addShapeless(stone * 1, [<minecraft:stonebrick>]);
 recipes.addShapeless(stone_brick * 3, [<minecraft:stone_brick_stairs>, <minecraft:stone_brick_stairs>]);
-recipes.addShaped(chiseled_stone_brick * 1, [[stone_brick_slab], [stone_brick_slab]]); //1.7
-furnace.addRecipe(cracked_stone_brick, stone_brick); //1.7
+// recipes.addShaped(chiseled_stone_brick * 1, [[stone_brick_slab], [stone_brick_slab]]); //handled by vanilla 1.8+
+// furnace.addRecipe(cracked_stone_brick, stone_brick); //handled by vanilla 1.8+
 
 //ENDSTONE
 recipes.addShapeless(<minecraft:end_stone> * 1, [<minecraft:end_bricks>]);  //1.9
@@ -186,8 +186,8 @@ recipes.addShapeless(<minecraft:mossy_cobblestone> * 1, [mossy_cobblestone_wall]
 recipes.addShapeless(<minecraft:cobblestone> * 1, [<minecraft:mossy_cobblestone>]);
 recipes.addShapeless(stone_brick * 1, [mossy_stone_brick]); //for convenience
 recipes.addShapeless(mossy_cobblestone_wall * 1, [cobblestone_wall, <minecraft:vine>]); //1.7
-recipes.addShapeless(<minecraft:mossy_cobblestone> * 1, [<minecraft:cobblestone>, <minecraft:vine>]); //1.7
-recipes.addShapeless(mossy_stone_brick * 1, [stone_brick, <minecraft:vine>]);
+// recipes.addShapeless(<minecraft:mossy_cobblestone> * 1, [<minecraft:cobblestone>, <minecraft:vine>]); //handled by vanilla 1.8+
+// recipes.addShapeless(mossy_stone_brick * 1, [stone_brick, <minecraft:vine>]); //handled by vanilla 1.8+
 
 //MISC
 recipes.addShapeless(<minecraft:clay_ball> * 4, [<minecraft:clay>]);
