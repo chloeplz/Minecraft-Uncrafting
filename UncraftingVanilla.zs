@@ -162,6 +162,7 @@ recipes.addShapeless(<minecraft:nether_brick> * 3, [<minecraft:nether_brick_stai
 recipes.addShapeless(<minecraft:nether_brick> * 1, [<minecraft:nether_brick_fence>]);
 recipes.addShaped(<minecraft:nether_brick> * 1, [[nether_brick_slab], [nether_brick_slab]]);
 recipes.addShapeless(<minecraft:glowstone_dust> * 4, [<minecraft:glowstone>]);
+recipes.addShapeless(<minecraft:nether_wart> * 9, [<minecraft:nether_wart_block>]); //1.10
 
 //QUARTZ
 recipes.addShapeless(<minecraft:quartz> * 4, [<minecraft:quartz_block>]);
@@ -195,6 +196,7 @@ recipes.addShapeless(<minecraft:melon> * 9, [<minecraft:melon_block>]);
 recipes.addShapeless(<minecraft:blaze_rod> * 1, [<minecraft:blaze_powder>, <minecraft:blaze_powder>]);
 recipes.addShaped(<minecraft:snow> * 1, [[<minecraft:snow_layer:0>], [<minecraft:snow_layer:0>]]);
 recipes.addShapeless(<minecraft:name_tag> * 1, [<minecraft:paper>, <minecraft:string>]);
+recipes.addShapeless(<minecraft:magma_cream> * 4, [<minecraft:magma>]); //1.10
 
 //LEATHER
 recipes.addShaped(<minecraft:saddle> * 1, [[null, <minecraft:leather>, null], [<minecraft:leather>, null, <minecraft:leather>]]); //follows ee2 emc suggestion
@@ -369,4 +371,5 @@ recipes.addShapeless(brown_glass * 3, [brown_pane, brown_pane, brown_pane, brown
 recipes.addShapeless(green_glass * 3, [green_pane, green_pane, green_pane, green_pane, green_pane, green_pane, green_pane, green_pane]);
 recipes.addShapeless(red_glass * 3, [red_pane, red_pane, red_pane, red_pane, red_pane, red_pane, red_pane, red_pane]);
 recipes.addShapeless(black_glass * 3, [black_pane, black_pane, black_pane, black_pane, black_pane, black_pane, black_pane, black_pane]);
+
 
