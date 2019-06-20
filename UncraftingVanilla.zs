@@ -173,7 +173,8 @@ recipes.addShapeless(<minecraft:quartz_block> * 3, [<minecraft:quartz_stairs>, <
 recipes.addShapeless(<minecraft:chorus_fruit_popped> * 4, [<minecraft:purpur_block>]); //1.9
 // recipes.addShaped(<minecraft:purpur_pillar> * 1, [[<minecraft:purpur_slab>], [<minecraft:purpur_slab>]]); //purpur slab handled by vanilla mc
 recipes.addShapeless(<minecraft:purpur_block> * 3, [<minecraft:purpur_stairs>, <minecraft:purpur_stairs>]); //1.9
-recipes.addShapeless(<minecraft:purpur_slab> * 6, [<minecraft:purpur_pillar>]); //1.9, remove for 1.13
+recipes.addShapeless(<minecraft:purpur_block> * 1, [<minecraft:purpur_pillar>]); //1.9
+recipes.addShaped(<minecraft:purpur_slab> * 6, [[<minecraft:purpur_pillar>, <minecraft:purpur_pillar>, <minecraft:purpur_pillar>]]); //1.9, remove for 1.13
 recipes.addShaped(<minecraft:purpur_stairs> * 3, [[<minecraft:purpur_pillar>, null, null], [<minecraft:purpur_pillar>, <minecraft:purpur_pillar>, null], [<minecraft:purpur_pillar>, <minecraft:purpur_pillar>, <minecraft:purpur_pillar>]]); //1.9, remove for 1.13
 recipes.addShaped(<minecraft:purpur_stairs> * 3, [[null, null, <minecraft:purpur_pillar>], [null, <minecraft:purpur_pillar>, <minecraft:purpur_pillar>], [<minecraft:purpur_pillar>, <minecraft:purpur_pillar>, <minecraft:purpur_pillar>]]); //1.9, remove for 1.13
 
